@@ -19,5 +19,5 @@ URL=the_url_from_the_step_3_above
 4. update the `SOURCE`, `DEST` and `LANGUAGE` variables in the script file, to match your requirements:
 * `SOURCE`: the source filename (data to translate)
 * `DEST`: the destination filename (translated data)
-* `LANGUAGE`: the src_dst languages
+* `MODEL`: the WATSON Model. It's basically something like `xx_yy`, where `xx` is the source language code (e.g. `en` for English) and `yy` is the destination language code (e.g. `fr` for Franch). You can use the `languages.py` script to list all the available models.
 5. Run the script with `python3 ./translate.py`
