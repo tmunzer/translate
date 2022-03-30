@@ -5,7 +5,7 @@ import requests
 
 SOURCE = 'jp_common_resource.json'
 DEST = 'fr_common_resource.json'
-LNG_DST = "en-fr"
+MODEL = "en-fr"
 
 
 def load():
@@ -42,7 +42,7 @@ def translate(data: json, credentials: str, url: str):
 
 def watson(str_to_transalte: str, credentials: str, url: str):
     headers = {"Content-Type": "application/json"}
-    payload = json.dumps({"text": str_to_transalte, "model_id": LNG_DST})
+    payload = json.dumps({"text": str_to_transalte, "model_id": MODEL})
     full_url = "{0}/v3/translate?version=2018-05-01".format(url)
     resp = requests.post(full_url, auth=(
         'apikey', credentials), headers=headers, data=payload)
