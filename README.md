@@ -16,7 +16,7 @@ KEY=the_key_from_the_step_3_above
 URL=the_url_from_the_step_3_above
 ```
 3. copy the source file to translate in the repository folder
-4. update the `MODEL` variables in the script file, to match your requirements:
+4. update the `MODEL` variable in the script file, to match your requirements:
 * `MODEL`: the WATSON Model. It's basically something like `xx-yy`, where `xx` is the source language code (e.g. `en` for English) and `yy` is the destination language code (e.g. `fr` for Franch). You can use the `languages.py` script to list all the available models.
 5. Run the script with `python3 ./translate.py -s <source_file> `
 6. The output is saved in a new file named as the source file name, but prefixed with the destination language.
